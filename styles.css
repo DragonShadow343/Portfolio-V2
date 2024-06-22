@@ -474,6 +474,13 @@ header.scrolled .name {
 	max-height: 28rem; 
 }
 
+.about-img {
+	height: 500px;
+}
+
+html.dark .about-imgL, .about-imgD {display: none;}
+html.dark .about-imgD, .about-imgL {display: block;}
+
 /*---------- Education Skills ----------*/
 
 .education {

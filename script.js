@@ -4,7 +4,7 @@ const header = document.querySelector("header");
 //---------- Sticky Navbar ----------//
 
 function stickyNavbar() {
-  header.classList.toggle("scrolled", window.pageYOffset > 0);
+  header.classList.toggle("scrolled", window.scrollY > 0);
 }
 
 window.addEventListener('scroll', stickyNavbar);
