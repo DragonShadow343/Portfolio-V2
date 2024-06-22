@@ -1061,10 +1061,23 @@ html.dark .about-imgD, .about-imgL {display: block;}
 	/* Showcase section */
 
 	.showcase-area {
-		background-image: url("./Imgs/Krish.jpg");
+		background-image: url("./Imgs/Krish.png");
 		background-repeat: no-repeat;
 		background-position: 0rem 5rem;
 		background-size: contain;
+		position: relative;
+	}
+
+	.showcase-area::after {
+		content: '';
+		position: absolute;
+		left: 5rem;
+		top: 8rem;
+		background-color: var(--color-3);
+		width: 40rem;
+		height: 40rem; 
+		border-radius: 9999px;
+		z-index: -1;
 	}
 
 	.showcase-area .person, .person-background {
