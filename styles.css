@@ -485,7 +485,7 @@ nav.container {
 html.dark .about-imgL, .about-imgD {display: none;}
 html.dark .about-imgD, .about-imgL {display: block;}
 
-/*---------- Education Skills ----------*/
+/*---------- Education Section ----------*/
 
 .education {
 	padding: auto auto;
@@ -1052,14 +1052,10 @@ html.dark .about-imgD, .about-imgL {display: block;}
 	}
 
 	.experience{
-		padding-left: 0.5rem;
+		padding-left: 1rem;
 	}
 
 	/* About section */
-
-	.about {
-		padding-left: 1rem;
-	}
 
 	.about-img {
 		display: none;
@@ -1068,7 +1064,7 @@ html.dark .about-imgD, .about-imgL {display: block;}
 	/*	Education Section  */
 
 	.education {
-		padding-left: 1rem;
+		transform: translateX(-0.5rem);
 	}
 
 	.edu-cards-container {
@@ -1078,6 +1074,10 @@ html.dark .about-imgD, .about-imgL {display: block;}
 	}
 
 	/* Skills section */
+
+	.skills-box {
+		padding-left: 4rem;
+	}
 
 	.skills-wrap {
 		display: flex;
