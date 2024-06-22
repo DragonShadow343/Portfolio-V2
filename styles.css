@@ -8,6 +8,7 @@
 
 :root {
 	--color-1: #FEFEFE;
+	--color-1-07: rgba(254, 254, 254,0.7);
 	--color-2: #EFF7F6;
 	--color-3: #FFADAD;
 	--color-4: #a873e8;
@@ -55,6 +56,7 @@ ul {
 
 .dark{
 	--color-1: #1D242A;
+	--color-1-07:rgba(29, 36, 42, 0.7);
 	--color-2: #2C363F;
 	--color-3: #E75A7C;
 	--color-4: #6A8D92;
@@ -171,13 +173,14 @@ ul {
 
 /*---------- Navbar Styling ----------*/
 
-header {
+#header {
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	z-index: 10;
 	transition: 0.4s;
+	backdrop-filter: blur(15px);
 }
 
 nav.container {
@@ -187,10 +190,11 @@ nav.container {
 	flex-wrap: wrap;
 }
 
-header.scrolled {
-	background-color: var(--color-1);
+#header.scrolled {
+	background-color: var(--color-1-07);
 	box-shadow: 0 5px 20px 0.1px rgba(0,0,0,0.1);
 	backdrop-filter: blur(15px);
+	-webkit-backdrop-filter: blur(15px);
 }
 
 .links {
@@ -211,7 +215,7 @@ header.scrolled {
 	transition: 0.2s;
 }
 
-header.scrolled .name {
+#header.scrolled .name {
 	margin-right: 1.5rem;
 	height: 80px;
 	line-height: 80px;
@@ -624,10 +628,6 @@ html.dark .about-imgD, .about-imgL {display: block;}
 	background-color: var(--color-3);
 	color: var(--color-2);
 	cursor: pointer;
-}
-
-.skill-name {
-	
 }
 
 /*---------- Portfolio Styling ----------*/

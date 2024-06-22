@@ -1,5 +1,5 @@
 // JavaScript Document
-const header = document.querySelector("header");
+const header = document.querySelector("#header");
 
 //---------- Sticky Navbar ----------//
 
