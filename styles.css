@@ -1049,9 +1049,9 @@ html.dark .about-imgD, .about-imgL {display: block;}
 	/* Showcase section */
 
 	.showcase-area {
-		background-image: url("./Imgs/Krish\ 2.jpg");
+		background-image: url("./Imgs/Krish.jpg");
 		background-repeat: no-repeat;
-		background-position: center;
+		background-position: 0rem 5rem;
 		background-size: contain;
 	}
 
@@ -1068,7 +1068,7 @@ html.dark .about-imgD, .about-imgL {display: block;}
 		height: fit-content;
 		padding: 3rem;
 		transform: translateX(1.5rem);
-		transform: translateY(12rem);
+		transform: translateY(10rem);
 		border-radius: 20px;
 		background-color: var(--color-3);
 	}
