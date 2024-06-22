@@ -1055,11 +1055,6 @@ html.dark .about-imgD, .about-imgL {display: block;}
 
 	/*	Education Section  */
 
-	.education .container {
-		padding: 0 0.2rem;
-	}
-
-
 	.edu-cards-container {
 		grid-template-columns: 100%;
 		row-gap: 4rem;
@@ -1067,10 +1062,6 @@ html.dark .about-imgD, .about-imgL {display: block;}
 	}
 
 	/* Skills section */
-
-	.skills .skill-container {
-		padding: 0 0.2rem;
-	}
 
 	.skills-wrap {
 		display: flex;
@@ -1080,10 +1071,6 @@ html.dark .about-imgD, .about-imgL {display: block;}
 	}
 
 	/* Experience Section */
-
-	.experience .container {
-		padding: 0 0.4rem;
-	}
 
 	#experience .sub-heading {
 		width: 20rem;
