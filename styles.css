@@ -461,6 +461,7 @@ header.scrolled .name {
 
 .about {
 	padding: 8rem;
+	padding-top: 12rem;
 }
 
 .about .text{
@@ -473,123 +474,10 @@ header.scrolled .name {
 	max-height: 28rem; 
 }
 
-.about .about-tree {
-	width: 100%;
-	height: auto;
-}
-
-.about-tree .about-tree-container{
-	position: relative;
-	top: -125px;
-}
-
-.about-tree .tree-container{
-	display: grid;
-	grid-auto-columns: 40% 60%;
-}
-
-.tree-container .tree-branches {
-	position: relative;
-	display: grid;
-	grid-template-rows: 50% 50% 50%;
-	z-index: 2;
-	left: 30%;
-}
-
-.tree-branches .branch {
-	position: relative;
-	
-	width: var(--s-diameter);
-	height: var(--s-diameter);
-	border-radius: 50%;
-	background-color: var(--color-4);
-	
-}
-
-.tree-container .main-tree {
-	position: absolute;
-	
-	width: 20rem;
-	height: 20rem;
-	border-radius: 50%;
-	background-color: var(--color-4);
-	z-index: 2;
-	
-	left: 85%;
-	top: 10rem;
-}
-
-.about-tree .tree-lines{
-	position: absolute;
-}
-
-
-.branch:nth-child(1) {
-	left: 35%;
-}
-
-.branch:nth-child(3) {
-	left: 35%;
-}
-
-.tree-lines .line {
-	position: relative;
-	display: inline-block;
-	
-	opacity: 1;
-	z-index: 1;
-}
-
-.tree-lines .line::after {
-	position: absolute;
-	content: "";
-
-	height: 8px;
-	border-radius: 5px;
-	background-color: var(--color-3);
-}
-
-.tree-lines .line:nth-child(1)::after {
-	left: 10rem;
-	top: -290px;
-	width: 400px;
-	z-index: -3;
-	transform: rotateZ(45deg)	
-}
-
-.tree-lines .line:nth-child(2)::after {
-	left: 10rem;
-	top: -175px;
-	width: 400px;
-	z-index: -3;
-		
-}
-
-.tree-lines .line:nth-child(3)::after {
-	left: 10rem;
-	top: -70px;
-	width: 400px;
-	z-index: 1;
-	transform: rotateZ(-45deg)
-		
-}
-
-#tree-bg-shape {
-	position: relative;
-	left: 0%;
-	top: -500px;
-	width: 150%;
-	z-index: -2;
-}
-
 /*---------- Education Skills ----------*/
 
 .education {
 	padding: auto auto;
-}
-
-.education .container {
-	
 }
 
 .subjects-container{
@@ -604,10 +492,6 @@ header.scrolled .name {
 .gcse-level {
 	margin: 2.5rem 0 0rem 0;
 	height: 80%;
-}
-
-.gcse-title {
-	
 }
 
 .st0{
@@ -819,10 +703,6 @@ header.scrolled .name {
 .portfolio-header {
 	display: flex;
 	justify-content: space-between;
-}
-
-.portfolio-title {
-	
 }
 
 .filter-btns {
