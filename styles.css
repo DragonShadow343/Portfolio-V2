@@ -577,7 +577,7 @@ html.dark .about-imgD, .about-imgL {display: block;}
 	top: 40px;
 	background-color: var(--color-1);
 	width: 100%;
-	padding: 6rem 5rem;
+	padding: 6rem 2rem;
 	border-radius: 20px;
 	transition: 0.4s all;
 }
@@ -769,11 +769,11 @@ html.dark .about-imgD, .about-imgL {display: block;}
 @media only screen and (max-width: 1160px){
 	
 	.about {
-		padding: 10rem 2rem;
+		padding: 10rem 1.75rem;
 	}
 	
 	.education {
-		padding: 4rem 2rem;
+		padding: 4rem 0.75rem;
 	}
 	
 	.experience {
@@ -1071,6 +1071,10 @@ html.dark .about-imgD, .about-imgL {display: block;}
 	}
 
 	/* Experience Section */
+
+	.experience .container {
+		margin: 0 0.5rem;
+	}
 
 	#experience .sub-heading {
 		width: 20rem;
