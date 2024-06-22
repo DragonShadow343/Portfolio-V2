@@ -441,7 +441,7 @@ nav.container {
 	position: absolute;
 	width: 95%;
 	min-width: 547.1875px;
-	transform: scaleX(1);
+	transform: scaleX(-1);
 	left: -25px;
 	border-radius: 17%;
 }
@@ -1044,6 +1044,33 @@ html.dark .about-imgD, .about-imgL {display: block;}
 
 	.container {
 		padding: 0 0.4rem;
+	}
+
+	/* Showcase section */
+
+	.showcase-area {
+		background-image: url("./Imgs/Krish\ 2.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
+
+	.showcase-area .person, .person-background {
+		display: none;
+	}
+
+	.showcase-area .container {
+		grid-template-columns: 100%;
+	}
+
+	.showcase-area .showcase-info {
+		width: 110vw;
+		height: fit-content;
+		padding: 3rem;
+		transform: translateX(1.5rem);
+		transform: translateY(12rem);
+		border-radius: 20px;
+		background-color: var(--color-3);
 	}
 
 	/* About section */
