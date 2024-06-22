@@ -721,7 +721,6 @@ html.dark .about-imgD, .about-imgL {display: block;}
 	top: 0;
 	left: 0;
 	background-color: transparent;
-	backdrop-filter: blur(0px);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -731,8 +730,9 @@ html.dark .about-imgD, .about-imgL {display: block;}
 
 .prt-img:hover .prt-overlay {
 	pointer-events: auto;
-	background-color: rgba(5,5,5,0.65);
-	backdrop-filter: blur(5px);
+	background-color: rgba(5,5,5,0.6);
+	backdrop-filter: blur(15px);
+	-webkit-backdrop-filter: blur(8px);
 }
 
 .prt-text {
@@ -751,28 +751,6 @@ html.dark .about-imgD, .about-imgL {display: block;}
 	opacity: 1;
 	transform: translateY(0px);
 }
-
-/*
-.prt-img .prt-text a {
-	color: color-6;
-	transition: 0.4s;
-	opacity: 0;
-	background-color: var(--color-3);
-	padding: 0.1rem 0.5rem 0.15rem 0.5rem;
-	border-radius: 8px;
-}
-
-.prt-img:hover .prt-text a {
-	color: color-6;
-	opacity: 1;
-	transition: 0.4s;
-}
-
-.prt-img:hover .prt-text a:hover {
-	color: var(--main-color-1);
-	background-color: color-6;
-}
-*/
 
 @media only screen and (max-width: 1320px){
 	.portfolio-gallery {
@@ -996,6 +974,26 @@ html.dark .about-imgD, .about-imgL {display: block;}
 		position: sticky;
 		left: 50px;
 	}
+
+	/* About section */
+
+	#about .container {
+		position: relative;
+	}
+
+	.about-info {
+		background-color: var(--color-1);
+		height: fit-content;
+		width: 100%;
+		padding: 1.5rem;
+		border-radius: 20px;
+		position: relative;
+	}
+
+	.about-img {
+		transform: translateX(-2.5rem);
+		z-index: 1;
+	}
 	
 /*	Education Section  */
 	.subjects-container {
@@ -1036,8 +1034,7 @@ html.dark .about-imgD, .about-imgL {display: block;}
 }
 
 @media only screen and (max-width: 700px){
-/*	About */
-	#tree-bg-shape  {
+	.about-img {
 		display: none;
 	}
 }
