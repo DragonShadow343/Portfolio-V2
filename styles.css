@@ -516,7 +516,8 @@ html.dark .about-imgD, .about-imgL {display: block;}
 	border: 1px solid var(--color-3);
 	border-radius: 20px;
 	padding: 1rem;
-	min-width: fit-content;
+	min-width: 25rem;
+	width: 25rem;
 	max-width: 25rem;
 }
 
@@ -964,6 +965,36 @@ html.dark .about-imgD, .about-imgL {display: block;}
 	}
 }
 
+@media only screen and (max-width: 975px) {
+	/*	Education Section  */
+	.edu-cards-container {
+		grid-template-columns: 100%;
+		row-gap: 4rem;
+		column-gap: 0;
+	}
+
+	.institution-card {
+		min-width: 25rem;
+		max-width: 45rem;
+	}
+
+	.cert-card {
+		min-width: fit-content;
+		max-width: 45rem;
+	}
+
+	.institution-card-container, .cert-card-container {
+		display: flex;
+		flex-wrap: wrap;
+		column-gap: 2rem;
+		row-gap: 2rem;
+	}
+
+	.institution-card, .cert-card {
+		width: fit-content;
+	}
+}
+
 @media only screen and (max-width: 790px){
 	
 	.showcase-info .heading {
@@ -994,47 +1025,45 @@ html.dark .about-imgD, .about-imgL {display: block;}
 		transform: translateX(-2.5rem);
 		z-index: 1;
 	}
-	
-/*	Education Section  */
-	.subjects-container {
-		display: none;
-	}
-	
-	.table-subject-container {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-	
-	.table-subject-container .subject-container{
-		width: 80%;
-		min-width: 450px;
-		padding-bottom: 25px;
-		border: 2px solid var(--color-3);
-		border-radius: 20px;
-		margin-bottom: 1rem;
-	}
-	
-	.table-subject-container ul{
-		font-family: "Nunito Sans", sans-serif;
-		color: var(--color-3);
-		position: relative;
-		top: 10px;
-		left: 1rem;
-		padding-right: 2rem;
-	}
-	
-	.table-subject-container .subject-name {
-		text-align: start;
+
+	/*	Education Section  */
+	.edu-cards-container {
+		grid-template-columns: 100%;
+		row-gap: 4rem;
+		column-gap: 0;
 	}
 
-	.gcse-level {
-		height: 100%;
+	.institution-card {
+		min-width: 25rem;
+		max-width: 45rem;
+	}
+
+	.cert-card {
+		min-width: fit-content;
+		max-width: 45rem;
+	}
+
+	.institution-card-container, .cert-card-container {
+		display: flex;
+		flex-wrap: wrap;
+		column-gap: 2rem;
+		row-gap: 2rem;
+	}
+
+	.institution-card, .cert-card {
+		width: fit-content;
 	}
 }
 
 @media only screen and (max-width: 700px){
 	.about-img {
 		display: none;
+	}
+
+	/*	Education Section  */
+	.edu-cards-container {
+		grid-template-columns: 100%;
+		row-gap: 4rem;
+		column-gap: 0;
 	}
 }
