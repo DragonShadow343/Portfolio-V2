@@ -620,6 +620,10 @@ html.dark .about-imgD, .about-imgL {display: block;}
 	justify-content: space-between;
 }
 
+#experience .sub-heading {
+	width: 35rem;
+}
+
 .filter-btns {
 	margin: 1.5rem 1.5rem;
 	color: var(--color-4);
@@ -795,11 +799,6 @@ html.dark .about-imgD, .about-imgL {display: block;}
 			left: 100px;
 		}
 	}
-	
-	/*	education */
-	.gcse-level {
-		height: 110%;
-	}
 }
 
 @media only screen and (max-width: 1070px){
@@ -808,7 +807,6 @@ html.dark .about-imgD, .about-imgL {display: block;}
 		grid-template-columns: repeat(3, 28%);
 		grid-auto-rows: 5rem;
 	}
-	
 	
 }
 
@@ -905,9 +903,17 @@ html.dark .about-imgD, .about-imgL {display: block;}
 	
 	.portfolio-gallery {
 		margin-top: 0.75rem;
+		justify-items: center;
+	}
+
+	.prt-card {
+		min-width: 350px;
+		width: 350px;
+		max-width: 400px;
 	}
 
 	/*	Education Section  */
+
 	.edu-cards-container {
 		grid-template-columns: 100%;
 		row-gap: 4rem;
@@ -937,6 +943,9 @@ html.dark .about-imgD, .about-imgL {display: block;}
 }
 
 @media only screen and (max-width: 900px){
+
+	/* Navbar */
+
 	.links{
 		display: none;
 	}
@@ -977,6 +986,7 @@ html.dark .about-imgD, .about-imgL {display: block;}
 	}
 
 	/*	Education Section  */
+
 	.edu-cards-container {
 		grid-template-columns: 100%;
 		row-gap: 4rem;
@@ -1012,13 +1022,36 @@ html.dark .about-imgD, .about-imgL {display: block;}
 		flex-wrap: wrap;
 		gap: 0.75rem;
 	}
+
+	/* Experience section */
+
+	.portfolio-gallery {
+		display: grid;
+		grid-template-columns: 95%;
+		row-gap: 2rem;
+		margin: 5rem 0;
+	}
+
+	.prt-card {
+		min-width: 350px;
+		width: 400px;
+		max-width: 400px;
+	}
 }
 
 @media only screen and (max-width: 700px){
 
+	/* General */
+
 	.container {
 		padding: 0 0.5rem;
 	}
+
+	#experience .sub-heading {
+		width: 20rem;
+	}
+
+	/* About section */
 
 	.about-img {
 		display: none;
