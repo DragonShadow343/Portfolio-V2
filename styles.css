@@ -1044,11 +1044,15 @@ html.dark .about-imgD, .about-imgL {display: block;}
 	/* General */
 
 	.container {
-		padding: 0 0.5rem;
+		padding: 0 0.25rem;
 	}
 
 	#experience .sub-heading {
 		width: 20rem;
+	}
+
+	.experience{
+		padding: 0.25rem;
 	}
 
 	/* About section */
