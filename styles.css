@@ -894,53 +894,6 @@ html.dark .about-imgD, .about-imgL {display: block;}
 
 @media only screen and (max-width: 982px){
 	
-	.about-tree .about-tree-container{
-		position: relative;
-		top: -50px;
-	}
-	
-	.tree-branches .branch{
-		width: 7.5rem;
-		height: 7.5rem;
-	}
-	
-	.tree-container .main-tree{
-		width: 14.5rem;
-		height: 14.5rem;
-		top: 8.5rem;
-		left: 65%;
-	}
-	
-	.tree-lines .line:nth-child(1)::after {
-		left: 7.5rem;
-		top: -250px;
-		width: 200px;
-		z-index: -3;
-		transform: rotateZ(45deg)	
-	}
-	
-	.tree-lines .line:nth-child(2)::after {
-		left: 7.5rem;
-		top: -135px;
-		width: 200px;
-		z-index: -3;
-
-	}
-	
-	.tree-lines .line:nth-child(3)::after {
-		left: 7.5rem;
-		top: -30px;
-		width: 200px;
-		z-index: 1;
-		transform: rotateZ(-45deg)
-
-	}
-	
-	#tree-bg-shape {
-		top: -300px;
-		width: 120%;
-	}
-	
 	/*	Portfoli Section  */
 	.portfolio-header {
 		flex-direction: column;
@@ -954,18 +907,6 @@ html.dark .about-imgD, .about-imgL {display: block;}
 		margin-top: 0.75rem;
 	}
 
-}
-
-@media only screen and (max-width: 900px){
-	.links{
-		display: none;
-	}
-	#hamburger, .burgered, .burgered #exitbtn {
-		display: flex;
-	}
-}
-
-@media only screen and (max-width: 975px) {
 	/*	Education Section  */
 	.edu-cards-container {
 		grid-template-columns: 100%;
@@ -992,6 +933,15 @@ html.dark .about-imgD, .about-imgL {display: block;}
 
 	.institution-card, .cert-card {
 		width: fit-content;
+	}
+}
+
+@media only screen and (max-width: 900px){
+	.links{
+		display: none;
+	}
+	#hamburger, .burgered, .burgered #exitbtn {
+		display: flex;
 	}
 }
 
@@ -1053,6 +1003,15 @@ html.dark .about-imgD, .about-imgL {display: block;}
 	.institution-card, .cert-card {
 		width: fit-content;
 	}
+
+	/* Skills section */
+
+	.skills-wrap {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 0.75rem;
+	}
 }
 
 @media only screen and (max-width: 700px){
@@ -1065,5 +1024,14 @@ html.dark .about-imgD, .about-imgL {display: block;}
 		grid-template-columns: 100%;
 		row-gap: 4rem;
 		column-gap: 0;
+	}
+
+	/* Skills section */
+
+	.skills-wrap {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 0.75rem;
 	}
 }
