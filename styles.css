@@ -1053,7 +1053,7 @@ html.dark .about-imgD, .about-imgL {display: block;}
 	/*	Education Section  */
 
 	.education .container {
-		padding: 0 0.15rem;
+		padding: 0 0.2rem;
 	}
 
 
@@ -1066,7 +1066,7 @@ html.dark .about-imgD, .about-imgL {display: block;}
 	/* Skills section */
 
 	.skills .skill-container {
-		padding: 0 0.1rem;
+		padding: 0 0.2rem;
 	}
 
 	.skills-wrap {
@@ -1079,7 +1079,7 @@ html.dark .about-imgD, .about-imgL {display: block;}
 	/* Experience Section */
 
 	.experience .container {
-		padding: 0 0.3rem;
+		padding: 0 0.4rem;
 	}
 
 	#experience .sub-heading {
