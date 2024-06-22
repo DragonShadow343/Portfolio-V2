@@ -589,7 +589,7 @@ html.dark .about-imgD, .about-imgL {display: block;}
 .skills-wrap {
 	display: grid;
 	grid-template-columns: repeat(4, 18%);
-	grid-template-rows: 5rem 5rem;
+	grid-auto-rows: 5rem;
 	grid-column-gap: 8%;
 	padding-top: 2.5rem;
 }
@@ -606,8 +606,9 @@ html.dark .about-imgD, .about-imgL {display: block;}
 .skill-container:hover {
 	background-color: var(--color-3);
 	color: var(--color-2);
-	cursor: pointer;
 }
+
+/*----------- Experience Section ----------*/
 
 .experience {
 	padding: auto auto;
