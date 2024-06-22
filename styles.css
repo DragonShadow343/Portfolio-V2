@@ -1052,16 +1052,25 @@ html.dark .about-imgD, .about-imgL {display: block;}
 	}
 
 	.experience{
-		padding: 0.25rem;
+		padding-left: 0.5rem;
 	}
 
 	/* About section */
+
+	.about {
+		padding-left: 1rem;
+	}
 
 	.about-img {
 		display: none;
 	}
 
 	/*	Education Section  */
+
+	.education {
+		padding-left: 1rem;
+	}
+
 	.edu-cards-container {
 		grid-template-columns: 100%;
 		row-gap: 4rem;
