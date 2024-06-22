@@ -1043,13 +1043,6 @@ html.dark .about-imgD, .about-imgL {display: block;}
 
 	/* General */
 
-	.container {
-		padding: 0 0rem;
-	}
-
-	#experience .sub-heading {
-		width: 20rem;
-	}
 
 	/* About section */
 
@@ -1058,6 +1051,10 @@ html.dark .about-imgD, .about-imgL {display: block;}
 	}
 
 	/*	Education Section  */
+
+	.education .container {
+		padding: 0 0.15rem;
+	}
 
 
 	.edu-cards-container {
@@ -1068,10 +1065,24 @@ html.dark .about-imgD, .about-imgL {display: block;}
 
 	/* Skills section */
 
+	.skills .skill-container {
+		padding: 0 0.1rem;
+	}
+
 	.skills-wrap {
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
 		gap: 0.75rem;
+	}
+
+	/* Experience Section */
+
+	.experience .container {
+		padding: 0 0.3rem;
+	}
+
+	#experience .sub-heading {
+		width: 20rem;
 	}
 }
