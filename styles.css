@@ -441,7 +441,7 @@ nav.container {
 	position: absolute;
 	width: 95%;
 	min-width: 547.1875px;
-	transform: scaleX(-1);
+	transform: scaleX(1);
 	left: -25px;
 	border-radius: 17%;
 }
