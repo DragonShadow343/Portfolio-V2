@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nunito+Sans:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+	--background: #EFF7F6;
+	--check:#afb;
+	--ball:#f2eee3;
+}
+
+.dark {
+	--background: #2F242C;
+	--check: #f2eee3;
+	--ball: #afb;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.dark-mode {
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	justify-content: center;
+	alignn-tens: center;
+	background: var(--background);
+	transition: 0.4s all;
+}
+
+.checkbox:checked+.label .ball {
+	transform: translateX(24px);
+
+}
+
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
+
+label {
+	width: 50px;
+	height: 26px;
+	background: var(--check);
+	border-radius: 50px;
+	padding: 5px;
+	position: relative;
+}
+
+.ball {
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 22px;
+	height: 22px;
+	background: var(--ball);
+	border-radius: 50%;
+	transition: transform 0.2s linear;
+}
