@@ -1043,6 +1043,9 @@ html.dark .about-imgD, .about-imgL {display: block;}
 
 	/* General */
 
+	.container {
+		padding: 0 0.25rem;
+	}
 
 	/* About section */
 
