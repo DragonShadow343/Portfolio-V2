@@ -239,7 +239,7 @@ nav.container {
 	margin-top: 10px;
 }
 
-.links .nav-link{
+.links .nav-link, .links .nav-icon{
 	position: relative;
 	display: inline-block;
 	margin: 0 1rem;
@@ -253,7 +253,22 @@ nav.container {
 	transition: 0.4s;
 }
 
-.links .nav-link::after{
+.links .nav-icons {
+	display: flex;
+}
+
+.links .nav-icon {
+	width: 22.5px;
+	margin: 0 0.25rem;
+}
+
+.links .nav-icon i {
+	font-size: 1.25rem;
+
+	margin: 0;
+}
+
+.links .nav-link::after, .links .nav-icon::after{
 	content: "";
 	position: absolute;
 	width: 0;
@@ -267,12 +282,12 @@ nav.container {
 	transition: 0.4s;
 }
 
-.links .nav-link:hover::after{
+.links .nav-link:hover::after, .links .nav-icon:hover::after{
 	width: 100%;
 	opacity: 0.2;
 }
 
-.links .nav-link:hover {
+.links .nav-link:hover, .links .nav-icon:hover {
 	opacity: 100%;
 	color: var(--color-3);
 }
@@ -563,7 +578,6 @@ html.dark .about-imgD, .about-imgL {display: block;}
 .cert-provider {
 	color: var(--color-6);
 }
-
 /*----------- Skills Section ----------*/
 
 .skills {
@@ -937,7 +951,8 @@ html.dark .about-imgD, .about-imgL {display: block;}
 	}
 
 	.institution-card, .cert-card {
-		width: fit-content;
+		/* width: fit-content; */
+		width: 100%;
 	}
 }
 
