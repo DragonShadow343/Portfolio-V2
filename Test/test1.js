@@ -1,8 +1,13 @@
 // JavaScript Document
 
-const html = document.querySelector('html');
-const check = document.querySelector( '#checkbox');
+const open =  document.getElementById('open');
+const modal_container =  document.getElementById('modal_container');
+const close =  document.getElementById('close');
 
-check. addEventListener('change', function(){ 
-	html.classList.toggle('dark')
-});
+open.addEventListener('click', () => {
+	modal_container.classList.add('show')
+})
+
+close.addEventListener('click', () => {
+	modal_container.classList.remove('show')
+})

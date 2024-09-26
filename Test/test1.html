@@ -4,31 +4,31 @@
 <meta charset="UTF-8">
 <title>test</title>
 <link href="test1.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
 
 <body>
-	<div class="dark-mode">
-		<input type="checkbox" class="checkbox" id="checkbox"> 
-		<label for="checkbox" class="label"> 
-			<div class="ball"></div> 
-		</label>
-</div>
-	
-	  <header>
-    <nav class="container">
-      <div class="links">
-        <i class="uil uil-moon toggle-btn" style=></i>
-        <ul>
-          <li><a href="#about-start" class="nav-link">About</a></li>
-          <li><a href="#education" class="nav-link">Education</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#experience" class="nav-link">Extra-Curriculars</a></li>
-          <li><a href="mailto:krishkhullar.20@gmail.com" class="nav-link">Contact me</a></li>
-        </ul>
+	<button id="open" class="btn secondary-btn">
+    <i class="uil uil-external-link-alt"></i>
+  </button>
+
+  <div class="modal-container" id="modal_container">
+    <div class="modal">
+      <h1>Art portfolio</h1>
+      <button id="close">Close me</button>
+      
+      <div class="img-portfolio">
+        <div class="portfolio-grid digital-graphics">
+          <img src="" alt="">
+        </div>
+        <div class="portfolio-grid canvas-art">
+          
+        </div>
       </div>
-      <a href="#showcase-area" class="name">Port<span>folio.</span></a>
-    </nav>
-  </header>
+
+
+    </div>
+  </div>
 	
 	<script src="test1.js"></script>
 </body>
